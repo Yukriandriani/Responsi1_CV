@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mahasiswa</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">PORTOFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="d-flex align-items-center bg-dark text-light py-5" id="home">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <!-- Bagian Kiri: Nama dan Deskripsi -->
+            <div class="text-left me-4">
+                <h1 class="display-4 fw-bold gradient-text">Yukri Andriani Astuti</h1>
+                <p class="lead">Hello, I am a student from 'Aisyiyah University, Yogyakarta saya kelahiran 13 Februari.</p>
+                <a href="about" class="btn btn-primary mb-3">Learn More</a>
+    
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://github.com/Yukriandriani" target="_blank" class="btn btn-outline-light me-2">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://www.instagram.com/yukriandriani?igsh=MjBwNmIweHp2ZXQ3" target="_blank" class="btn btn-outline-light me-2">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
+                    <a href="https://youtube.com/@yukriandriani8468?si=eNQgjCZefEHhxilY" target="_blank" class="btn btn-outline-light">
+                        <i class="bi bi-youtube"></i> YouTube
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Bagian Kanan: Foto -->
+            <div class="text-center">
+                <img src="foto_yukri_2_1.jpg" alt="Your Photo" class="profile-img">
+            </div>            
+        </div>
+    </header>    
+
+    <!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">About Me</h2>
+        <p>Perkenalkan nama saya Yukri Andriani Astuti, saya berasal dari kota Yogyakarta. Saat ini, saya berkuliah di Universitas Aisyiyah Yogyakarta, jurusan Teknologi Informasi, angkatan 2023 (semester 3).</p>
+    
+        <a href="CV_Yukri.pdf" class="btn btn-primary" download="CV_Yukri">
+            Download CV
+        </a>
+    </div>
+    
+</section>
+
+<!-- Skill Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Bahasa yang Sudah dipelajari</h2>
+        <div class="row text-center">
+            <!-- HTML -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-html5-plain display-4 text-danger"></i>
+                <h5 class="mt-2">HTML</h5>
+            </div>
+            <!-- CSS -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-css3-plain display-4 text-primary"></i>
+                <h5 class="mt-2">CSS</h5>
+            </div>
+            <!-- JavaScript -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-javascript-plain display-4 text-warning"></i>
+                <h5 class="mt-2">JavaScript</h5>
+            </div>
+            <!-- Bootstrap -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-bootstrap-plain display-4 text-purple"></i>
+                <h5 class="mt-2">Bootstrap</h5>
+            </div>
+            <!-- Figma -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-figma-plain display-4 text-dark"></i>
+                <h5 class="mt-2">Figma</h5>
+            </div>
+            <!-- MySQL -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-mysql-plain display-4 text-info"></i>
+                <h5 class="mt-2">MySQL</h5>
+            </div>
+            <!-- Java -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-java-plain display-4 text-danger"></i>
+                <h5 class="mt-2">Java</h5>
+            </div>
+            <!-- C -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <i class="devicon-c-plain display-4 text-primary"></i>
+                <h5 class="mt-2">C</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Beberapa Tampilan Project saya</h2>
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="Jumbotron_1.png" class="card-img-top" alt="Custom Jumbotron">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Jumbotron</h5>
+                            <p class="card-text">
+                                pengembangan web untuk menampilkan konten utama atau pesan penting di sebuah halaman.
+                            </p>
+                            <p class="text-muted">Teknologi: HTML, CSS, Bootstrap, JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card">
+                        <img src="TO_DO_LIST.png" class="card-img-top" alt="To Do List"> 
+                        <div class="card-body">
+                            <h5 class="card-title">To Do List</h5>
+                            <p class="card-text">
+                                Suatu web pengelolaan tugas dengan fitur tambah, edit, dan hapus tugas.
+                            </p>
+                            <p class="text-muted">Teknologi: React.js, Firebase</p>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+<!-- Like/Dislike Section -->
+<section id="feedback" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Apakah Anda Menyukai Website Ini?</h2>
+        <button class="btn btn-outline-success btn-lg me-3" id="likeButton">
+            <i class="bi bi-hand-thumbs-up"></i> Suka
+        </button>
+        <button class="btn btn-outline-danger btn-lg" id="dislikeButton">
+            <i class="bi bi-hand-thumbs-down"></i> Tidak Suka
+        </button>
+    </div>
+</section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Me</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-light">
+        <p>&copy; 2024 Portofolio Mahasiswa. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
