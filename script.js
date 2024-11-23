@@ -20,26 +20,6 @@ document.querySelectorAll("a.btn").forEach(button => {
     });
 });
 
-// Button Like: SweetAlert2 Pop-Up
-document.getElementById("likeButton").addEventListener("click", function () {
-    Swal.fire({
-        title: "Terima Kasih!",
-        text: "Senang mendengar bahwa Anda menyukai website ini 😊",
-        icon: "success",
-        confirmButtonText: "Sama-sama!",
-    });
-});
-
-document.getElementById("likeButton").addEventListener("click", function () {
-    console.log("Like button clicked!");
-    Swal.fire({
-        title: "Terima Kasih!",
-        text: "Senang mendengar bahwa Anda menyukai website ini 😊",
-        icon: "success",
-        confirmButtonText: "Sama-sama!",
-    });
-});
-
 // Hire Me Button Pop-Up
 document.querySelector(".btn-outline-light").addEventListener("click", function (e) {
     e.preventDefault();
